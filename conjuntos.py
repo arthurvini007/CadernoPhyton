@@ -1,0 +1,27 @@
+#usuarios = {"Alice","Arthur"}
+
+#usuarios_2 = set(["Vitoria","Vivian"])
+
+#print(usuarios)
+#usuairos.add("Arthur")
+#print(usuarios)
+#usuarios.add("Nba")
+#print(usuarios)
+
+#Onde com os conjuntos , conseguimos fazer adicoes 
+
+usuarios = {"alice","bob","carlos"}
+usuarios_2 = set({"alice","bob","lucas"})
+
+print(usuarios.union(usuarios_2))  # |
+print(usuarios.intersection(usuarios_2)) # &
+print(usuarios.difference(usuarios_2)) # -
+
+e_igual = usuarios.union(usuarios_2) == usuarios | usuarios_2
+print(e_igual)
+
+e_igual = usuarios.intersection(usuarios_2) == usuarios & usuarios_2
+print(e_igual)
+
+e_igual = usuarios.difference(usuarios_2) == usuarios - usuarios_2
+print(e_igual)
